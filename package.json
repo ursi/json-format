@@ -1,0 +1,18 @@
+{
+  "name": "json-format",
+  "version": "0.1.0",
+  "bin": {
+    "json-format": "./index.js"
+  },
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "json",
+    "format"
+  ],
+  "author": "Mason Mackaman",
+  "license": "ISC"
+}
