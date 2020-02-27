@@ -4,7 +4,6 @@
   "bin": {
     "json-format": "./index.js"
   },
-  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -14,5 +13,13 @@
     "format"
   ],
   "author": "Mason Mackaman",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ursi/json-format.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ursi/json-format/issues"
+  },
+  "homepage": "https://github.com/ursi/json-format#readme"
 }
