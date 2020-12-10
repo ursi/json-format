@@ -30,8 +30,26 @@
     },
     "root": {
       "inputs": {
-        "flake-utils": "flake-utils",
-        "nixpkgs": "nixpkgs"
+        "nixpkgs": "nixpkgs",
+        "utils": "utils"
+      }
+    },
+    "utils": {
+      "inputs": {
+        "flake-utils": "flake-utils"
+      },
+      "locked": {
+        "lastModified": 1607633679,
+        "narHash": "sha256-ww1BoK6OjkeVSiOE57DXvBllDgnJ9F7hLUWyOloTtbg=",
+        "owner": "ursi",
+        "repo": "flake-utils",
+        "rev": "03350f0f46682afa1f2efa59768730b621d97e74",
+        "type": "github"
+      },
+      "original": {
+        "owner": "ursi",
+        "repo": "flake-utils",
+        "type": "github"
       }
     }
   },

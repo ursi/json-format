@@ -1,24 +1,11 @@
 {
-  outputs = { self, nixpkgs, flake-utils }:
-    flake-utils.lib.eachDefaultSystem
-      (system:
-        with nixpkgs.legacyPackages.${system};
+  inputs.utils.url = "github:ursi/flake-utils";
 
-        {
-          defaultPackage = stdenv.mkDerivation {
-              pname = "json-format";
-              version = "0.1.0";
-              buildInputs = [ nodejs ];
-              dontUnpack = true;
-              js = ./index.js;
-
-              installPhase = ''
-                mkdir -p $out/bin
-                local ex=$out/bin/json-format
-                cp $js $ex
-                chmod +x $ex
-              '';
-            };
-        }
-      );
+  outputs = { self, nixpkgs, utils }:
+    utils.builders.simple-js {
+      inherit nixpkgs;
+      name = "json-format";
+      version = "0.1.0";
+      path = ./index.js;
+    };
 }
